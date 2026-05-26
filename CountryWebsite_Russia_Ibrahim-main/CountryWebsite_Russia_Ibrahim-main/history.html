@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- WD Lesson 2.6: 
+     How can we create a website?
+     How can we add CSS to a web page? -->
+
+<!-- Resources 
+     https://slickplan.com/blog/types-of-website-structure 
+     https://www.w3schools.com/css/css_website_layout.asp
+     https://www.w3schools.com/css/default.asp 
+     https://www.w3schools.com/css/css_howto.asp
+-->
+<html>
+  <head>
+    <title>Russia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <style>
+      /* Challenge 6: Using internal styling,  change the color of the web page. */
+
+body {
+  background-image: url("https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/07/scrolling-gradient.png");
+  background-repeat: no-repeat;
+  background-size: 2000px 1600px;
+}
+      
+
+      /* Further challenges are located in style.css  */
+
+      /* Challenge 12: Create the other pages in the sitemap using index.html as the template. 
+                       Modify the heading in the banner container appropriately to match the topic of the web page.
+                       Modify the image included to match the topic of the web page.
+                       Provide an appropriate paragraph to the main container to match the topic of the web page.
+
+      */
+      
+    </style>
+  </head>
+  <body>
+    <!-- Challenge 1: Create the navigation bar in support of the sitemap associated with the website. -->
+
+<nav>
+<a href="index.html">Homepage</a>
+<a href="history.html">History</a>
+<a href="culture.html">Culture</a>
+<a href="gallery.html">gallery</a>
+</nav>
+
+
+    <!-- Challenge 2: Create a banner container with heading of "Web Development".  Give it a class of "banner".-->
+
+    <h1 class="banner">The History Of Russia</h1>
+
+    <div class="main">
+      <!-- Challenge 3: Add the image of webicons.png-->
+
+<img src="https://whbailey.weebly.com/uploads/1/5/7/3/15738528/header_images/1556127236.jpeg" style="height:250px;">
+<img src="https://images.squarespace-cdn.com/content/v1/5dc21d198c1cfd4ef901f025/1609781984449-IGB9D5FAL9R519YUFI6T/MongolEmpire1279.png" style="height:250px;">
+<img src="https://maps-russia.com/img/0/russian-empire-map.jpg" style="height:250px;">
+<img src="https://general-history.com/wp-content/uploads/2014/09/Soviet-Union.jpg" style="height:250px;">
+<img src="https://www.oni.navy.mil/portals/12/Russia22-01_1.png" style="height:250px;">
+
+      <!-- Challenge 4: Using inline styling, resize the above image appropriately -->
+
+ 
+      <!-- Challenge 5: Write a paragraph describing web development.  Discuss the purpose of HTML, CSS and JavaScript -->
+
+      <div style="border: 1px solid black">Origins: <ul><li>In 862, a Varangian (Viking) leader named Rurik was invited to rule over the Slavs, establishing the Rurik dynasty and the first political entity known as Rus
+</li><li>In 882, Prince Oleg of Novgorod seized Kiev, uniting northern and southern Slavic lands into what became Kievan Rus’, the first major East Slavic state.
+</li><li>In 988, Prince Vladimir the Great converted Rus’ to Christianity, aligning the region culturally with the Byzantine Empire and shaping Russian identity for centuries.
+</li></div>
+
+      <div style="border: 1px solid black">Mongol Invasion: <ul><li>In the early 1200s, the Mongol Empire invaded.
+</li><li>By 1240, Kiev fell, and the region came under the control of the Golden Horde, a Mongol successor state.
+</li><li>This period weakened Kievan Rus’, causing political fragmentation but also setting the stage for new centers of power to rise in the north.
+</li></ul></div>
+
+<div style="border: 1px solid black">The Russian Empire: <ul><li>In 1721, after major military victories and reforms, Peter the Great proclaimed the Russian Empire.
+</li><li>Russia expanded massively across Siberia, Eastern Europe, and into the Caucasus and Central Asia.
+</li><li>The empire became one of the world’s largest and most powerful states.
+</li><li>The Romanov dynasty ruled from 1613 until the Russian Revolution in 1917.
+</li></ul></div>
+    
+</div>
+
+   <div id="footer" class="container">
+      @Copyright 2020
+
+  </body>
+</html>
