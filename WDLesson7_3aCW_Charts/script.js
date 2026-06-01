@@ -1,6 +1,34 @@
 //global variables
 let data;
 
+async function init(){   
+  let link = "open.json"; //let link = "https://data.cityofnewyork.us/resource/erm2-nwe9.json?$limit=1000";
+  info = await fetch(link);
+  data = await info.json();
+  
+  let output = document.getElementById("output");
+  let build = "";
+
+  for(let i = 0; i < data.length; i+=1){
+    let boro = data[i];
+    build += `<div class="fitted card">
+                 <h3>${boro.occur_date}</h3>
+                 <hr>
+                 <p>${boro.boro}</p>
+                 <p>${boro.perp_age_group}</p>
+                 <p>${boro.perp_sex}</p>
+                 <p>${boro.perp_race}</p>
+                 <hr>
+                 <p>${boro.vic_race}</p>
+                 <p>${boro.vic_sex}</p>
+                 <p>${boro.vic_age_group}</p>
+                 <hr>
+                 <p>${boro.incident_key}</p>
+              </div>`    
+  }
+  output.innerHTML = build;
+}
+
 // Arrays of information
 let math = ["Math",79.0,80.0,79.9,78.8,73.4,77.2,74.5,78.7,76.8 ];
 let english = ["English",79.7,78.8,81.6,80.6,82.3,77.4,79.5,78.6,77.9];
