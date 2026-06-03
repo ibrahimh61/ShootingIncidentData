@@ -47,7 +47,7 @@ function chart(type){
 }
 
 //Task 5: Create a array "budget" with at least 6 items. Recall that budget must be structured as an array of arrays.
-let budget =[
+let percentages =[
   ["Bronx",75],
   ["Manhattan",39],
   ["Brooklyn",90],
@@ -57,7 +57,7 @@ let budget =[
 
 function budgetChart(){
   //Task 6: Display the budget as a pie chart
-  displayChart(budget, "chart", "pie");
+  displayChart(percentages, "chart", "pie");
 }
 
 
