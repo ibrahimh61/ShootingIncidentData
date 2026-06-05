@@ -71,3 +71,16 @@ function displayChart( data, chart_id, chart_type ){
     }
   });
 }
+function filterByBoro(){
+  leftPanel = get("leftPanel");
+  let boro = get("borough").value;
+  let build = "";
+  
+  for(let i = 0; i < data.length; i++){
+      let boro = data[i];
+      if (boro.borough == boro){		
+        build += card(boro);
+      }
+  }
+
+}
