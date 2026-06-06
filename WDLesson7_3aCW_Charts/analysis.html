@@ -10,15 +10,20 @@
     <script src="d3.js"></script>
     <script src="c3.js"></script>
     <script src="script.js"></script>
+    <style>
+    body {
+  background-image: url("https://images.pexels.com/photos/866351/pexels-photo-866351.jpeg");
+  background-repeat: no-repeat;
+  background-size: 2000px 1500px;
+}
+    </style>
    </head>
-
+  <body>
     <nav>
        <a href="index.html">Home</a>
        <a href="analysis.html">Analysis</a>
        <a href="info.html">Info</a>
     </nav>
-
-  <body>
     <div id="banner" class="container center">
       <h1> Charts </h1>
     </div>
@@ -31,8 +36,8 @@
     <div class="container">
       <div id="panel">
         <div class="card">
-          <h3>Subject Analysis</h3>
-          <p><span class="highlight">Scenario:</span> A chart that analyzes shootings across 5 Boroughs periods. </p>
+          <h3>Analysis</h3>
+          <p> A chart that analyzes shootings across 5 Boroughs periods. </p>
 
           <!-- Task 2: Review the call to the event handlers below. Event handlers are just functions which means information can be passed to them as well. By providing the type of chart to display, we can use the same event handler for line and bar charts. This is a benefit of modular programming -->
           <a class="button" onclick="chart('line')"> Line </a>
@@ -41,7 +46,7 @@
         
         <div class="card">
           <h3>Percentages</h3>
-          <p><span class="highlight">Scenario:</span> A chart that displays the breakup of the shootings across the 5 boroughs by percentages using a pie chart.</p>
+          <p> A chart that displays the breakup of the shootings across the 5 boroughs by percentages using a pie chart.</p>
           <a class="button" onclick="budgetChart()"> Pie chart</a>
         </div>
       </div>
@@ -53,7 +58,7 @@
     </div>
 
     <div id="footer" class="container center">
-      <h3>WD Lesson 7.3 Classwork</h3>
+      <h3>@Copyright 2026</h3>
     </div>  
   </body>
 </html>
