@@ -70,6 +70,7 @@ function displayChart( data, chart_id, chart_type ){
       type: chart_type // type of chart (pie/line/bar)
     }
   });
+  
 }
 function filterByBoro(){
   leftPanel = get("leftPanel");
